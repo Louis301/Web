@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ORLIK</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <!-- Логотип -->
+                <div class="logo"> 
+                    <img src="../img/logo.png" width="79" height="79" alt="Здеcь должно быть LOGO">
+                </div>
+                <div class="promo-logo">ИТиС ИВГПУ</div>
+                <!-- Список (ul > li * 4 > a) -->
+                <nav class="main-menu"> 
+                    <ul>
+                        <li><a href="#">Программа обучения</a></li>
+                        <li><a href="#">Выпускники</a></li>
+                        <li><a href="#">Как поступить</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="promo">
+                <div class="promo-title">Учёба ещё никогда не была такой интересной!</div>
+                <p>Обучаем специалистов в области графического дизайна и IT</p>
+                <!-- Оранжевая кнопка -->
+                <a href="#" class="btn btn-color">Узнать подробнее</a>
+            </div>
+            <div class="header-picture"> 
+                <img src="../img/pictInHeader.png" width="514" height="514" alt="Здеcь должно быть LOGO">
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-item">
+                <div class="features-icon-schedule">
+                    <img src="../img/shesterenka.png" width="70" height="70" alt="Шестерёнка">
+                </div>
+                <h2 class="features-title">Удобный график</h2>
+                <p>Современный темп жизни требует гибкого подхода к расписанию</p>
+            </div>
+
+            <div class="features-item">
+                <div class="features-icon-practice">
+                    <img src="../img/pero.png" width="83" height="65" alt="Перо">
+                </div>
+                    <h2 class="features-title">Много практики</h2>
+                    <p>Теория это хорошо, но мы за практическую работу</p>
+            </div>
+
+            <div class="features-item">
+                <div class="features-icon-work">
+                    <img src="../img/computer.png" width="61" height="60" alt="Комп">
+                </div>
+                    <h2 class="features-title">Трудоустройство</h2>
+                    <p>Хорошие специалисты всегда найдут себе  отличную работу</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-variants">
+        <div class="container">
+            <h2 class="main-education-title">Варианты обучения</h2>
+
+            <div class="education-item">
+                <h2 class="education-title">Дневное обучение</h2>
+                <p>Наиболее интенсивный вариант обучения. Он подходит тем, 
+                    кто не терпит компромиссова ни в чем. Хочет быстро освоить 
+                    навыки и развиваться в профессии.</p>
+                <!-- Кнопка (дневное обучение) -->
+                <a href="#" class="btn btn-color">Узнать подробнее</a>
+            </div>
+
+            <div class="education-item">
+                <h2 class="education-title">Вечернее обучение</h2>
+                <p>Подходит для тех кто уже работает, но хочет повысить свой 
+                    профессиональный уровень. Вы можете учиться без отрыва от 
+                    работы, вам все по плечу.</p>
+                <!-- Кнопка (вечернее обучение) -->
+                <a href="#" class="btn btn-color">Узнать подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="main-education-title">Обратная связь</h2>
+
+            <form action="" class="contacts-form" method="post">
+                <div class = field-fullname>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ваше имя">
+                </div>
+            
+                <div class = field-phone>
+                    <input type="text" id="phone-number" name="age" placeholder="Телефон">
+                </div>
+                
+                <div class = field-mail>
+                    <input type="text" id="mail" name="age" placeholder="E-mail">
+                </div>
+                
+                <div class = field-mess>
+                    <textarea type="text" id="message" name="message" placeholder="Комментарий"></textarea>
+                </div>
+            </form>
+
+            <!-- кнопка отправить -->
+            <a href="#" class="btn btn-color">Отправить заявку</a>
+
+            <div class="contacts-instruction">
+                <h3>Заинтересовались обучением?</h3>
+                <p>Заполните короткую форму обратной связи.</p>
+                <p> Мы подготовим индивидуальное 
+                    предложение и наши менеджеры свяжутся с 
+                    вами в течение 24 часов.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-item">
+                <h2 class="name-org">Кафедра Информационных технологий и сервиса ИВГПУ</h2>
+                <p>© 2021. Все права защищены</p>
+                <a href="#">Политика конфеденциальности</a>
+            </div>
+
+            <div class="footer-item">
+                <h2>Адрес:</h2>
+                <p>г. Иваново, Шереметевский пр., 21</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Связаться с нами:</h2>
+                <p>тел. 8-000-0-000-000<br>e-mail: itis_ivgpu@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
