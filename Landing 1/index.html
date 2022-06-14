@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Orlik_Yuriy</title>
+    <title>ORLIK</title>
 </head>
 
-<body>    
+<body>
     <header class="main-header">
         <div class="container">
             <div class="header-top">
                 <!-- Логотип -->
                 <div class="logo"> 
-                    <img src="../img/logo.png" width="182" height="81" alt="Здеcь должно быть LOGO">
+                    <img src="../img/logo.png" width="79" height="79" alt="Здеcь должно быть LOGO">
                 </div>
+                <div class="promo-logo">ИТиС ИВГПУ</div>
                 <!-- Список (ul > li * 4 > a) -->
                 <nav class="main-menu"> 
                     <ul>
@@ -28,172 +31,122 @@
                     </ul>
                 </nav>
             </div>
-
             <div class="promo">
                 <div class="promo-title">Учёба ещё никогда не была такой интересной!</div>
-                <p>Обучаем готовых к трудоустройству специалистов на теоретических и практических курсах.</p>
-                <!-- Зелёная кнопка -->
-                <a href="#" class="btn btn-green">Подать заявку</a>
+                <p>Обучаем специалистов в области графического дизайна и IT</p>
+                <!-- Оранжевая кнопка -->
+                <a href="#" class="btn btn-color">Узнать подробнее</a>
             </div>
-
+            <div class="header-picture"> 
+                <img src="../img/pictInHeader.png" width="514" height="514" alt="Здеcь должно быть LOGO">
+            </div>
         </div>
     </header>
 
     <section class="features">
         <div class="container">
             <div class="features-item">
-                <div class="features-icon features-icon-schedule"></div>
-                <h2 class="features-title">Гибкий график обучения</h2>
-                <p>Современный темп жизни требует гибкого подхода к расписанию.</p>
+                <div class="features-icon-schedule">
+                    <img src="../img/shesterenka.png" width="70" height="70" alt="Шестерёнка">
+                </div>
+                <h2 class="features-title">Удобный график</h2>
+                <p>Современный темп жизни требует гибкого подхода к расписанию</p>
             </div>
 
             <div class="features-item">
-                <div class="features-icon features-icon-practice"></div>
-                    <h2 class="features-title">Практические занятия</h2>
-                    <p>На одной теории далеко не уедешь, поэтому мы обучаем на практике.</p>
+                <div class="features-icon-practice">
+                    <img src="../img/pero.png" width="83" height="65" alt="Перо">
+                </div>
+                    <h2 class="features-title">Много практики</h2>
+                    <p>Теория это хорошо, но мы за практическую работу</p>
             </div>
 
             <div class="features-item">
-                <div class="features-icon features-icon-work"></div>
-                    <h2 class="features-title">Не оставим без работы</h2>
-                    <p>Хорошие специалисты всегда в цене и Вы станете именно таким.</p>
+                <div class="features-icon-work">
+                    <img src="../img/computer.png" width="61" height="60" alt="Комп">
+                </div>
+                    <h2 class="features-title">Трудоустройство</h2>
+                    <p>Хорошие специалисты всегда найдут себе  отличную работу</p>
             </div>
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="education-variants">
         <div class="container">
-            <h2 class="feedback-title">Отзывы выпускников</h2>
-            <a href="#" class="feedback-all">Показать всё</a>
-            <div class="feedback-item">
-                <div class="feedback-author">
-                    <img src="../img/user.jpg" width="133" height="133" alt="Иванов">
-                    <h3>Иванов <br>Пётр Сергеевич</h3>
-                    <p>Группа: 04-И-15<br> Выпуск: 2009 г</p>
-                </div>
-                <blockquote class="feedback-content">
-                    <h3>Тяжело в учении, легко в бою!</h3>
-                    <p>Во время обучения было очень тяжело, практические занятия требовали
-                        усидчивости и гибкости ума. Однако, по прошествии времени, понял, что всё это
-                        было не зря! Устроился в ведущую студию своего города сразу после выпуска, а
-                        проработав там три года, основал свою собственную!</p>
-                </blockquote>
+            <h2 class="main-education-title">Варианты обучения</h2>
+
+            <div class="education-item">
+                <h2 class="education-title">Дневное обучение</h2>
+                <p>Наиболее интенсивный вариант обучения. Он подходит тем, 
+                    кто не терпит компромиссова ни в чем. Хочет быстро освоить 
+                    навыки и развиваться в профессии.</p>
+                <!-- Кнопка (дневное обучение) -->
+                <a href="#" class="btn btn-color">Узнать подробнее</a>
+            </div>
+
+            <div class="education-item">
+                <h2 class="education-title">Вечернее обучение</h2>
+                <p>Подходит для тех кто уже работает, но хочет повысить свой 
+                    профессиональный уровень. Вы можете учиться без отрыва от 
+                    работы, вам все по плечу.</p>
+                <!-- Кнопка (вечернее обучение) -->
+                <a href="#" class="btn btn-color">Узнать подробнее</a>
             </div>
         </div>
     </section>
 
     <section class="contacts">
         <div class="container">
-            <h2 class="contacts-title">Обратная связь</h2>
+            <h2 class="main-education-title">Обратная связь</h2>
+
             <form action="" class="contacts-form" method="post">
-                <table>
-                    <tr>
-                        <td class="title"><label for="fullname">ФИО:</label></td>
-                        <td class="field">
-                            <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="title"><label for="age">Возраст:</label></td>
-                        <td class="field">
-                            <input type="text" id="age" name="age" placeholder="Укажите возраст, хотя бы приблизительно">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="title"><label for="sex">Пол: </label></td>
-                        <td class="field">
-                            <label><input type="radio" id="man" value="man" name="sex">Мужской</label>
-                            <label><input type="radio" id="woman" value="woman" name="sex">Женский</label>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="title"><label for="message">Возраст:</label></td>
-                        <td class="field">
-                            <textarea type="text" id="message" name="message" placeholder="Сообщите всё, что считаете нужным"></textarea>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="title"></td>
-                        <td class="field">
-                            <!-- Зелёная кнопка 2 -->
-                            <input type="submit" class="btn btn-green" value="Отправить">
-                        </td>
-                    </tr>
-                </table>
+                <div class = field-fullname>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ваше имя">
+                </div>
+            
+                <div class = field-phone>
+                    <input type="text" id="phone-number" name="age" placeholder="Телефон">
+                </div>
+                
+                <div class = field-mail>
+                    <input type="text" id="mail" name="age" placeholder="E-mail">
+                </div>
+                
+                <div class = field-mess>
+                    <textarea type="text" id="message" name="message" placeholder="Комментарий"></textarea>
+                </div>
             </form>
 
+            <!-- кнопка отправить -->
+            <a href="#" class="btn btn-color">Отправить заявку</a>
+
             <div class="contacts-instruction">
-                <h3>Заинтересовались обучением на нашей кафедре?</h3>
-                <p>Заполните короткую форму обратной связи и отправьте нам.</p>
-                <p>Мы подготовим для вас индивидуальное предложение и выйдем на связь!</p>
-                <p class="contacts-alert"><strong>Внимание!</strong>
-                    Все поля обязательны для заполнения.</p>
+                <h3>Заинтересовались обучением?</h3>
+                <p>Заполните короткую форму обратной связи.</p>
+                <p> Мы подготовим индивидуальное 
+                    предложение и наши менеджеры свяжутся с 
+                    вами в течение 24 часов.</p>
             </div>
         </div>
     </section>
 
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-item">
+                <h2 class="name-org">Кафедра Информационных технологий и сервиса ИВГПУ</h2>
+                <p>© 2021. Все права защищены</p>
+                <a href="#">Политика конфеденциальности</a>
+            </div>
 
-                <div class="footer-address">
-                    <div class="logo">
-                        <img src="img/logo-footer.png" width="180" height="81" alt="A+">
-                    </div>
-                    <p>153000, г. Иваново,<br> Шереметевский пр., д.21</p>
-                </div> 
+            <div class="footer-item">
+                <h2>Адрес:</h2>
+                <p>г. Иваново, Шереметевский пр., 21</p>
+            </div>
 
-                <div class="footer-menu">
-                    <h3>Обучение</h3>
-                    <ul>
-                        <li><a href="">Расписание</a></li>
-                        <li><a href="">Предметы</a></li>
-                        <li><a href="">Практика</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-menu">
-                    <h3>Выпускники</h3>
-                    <ul>
-                        <li><a href="">Достижения</a></li>
-                        <li><a href="">Отзывы</a></li>
-                        <li><a href="">Найти</a></li>
-                    </ul>
-                </div>
-            
-                <div class="footer-menu">
-                    <h3>Как поступить</h3>
-                    <ul>
-                        <li><a href="">На коммерцию</a></li>
-                        <li><a href="">Целевой набор</a></li>
-                        <li><a href="">На бюджет</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-menu">
-                    <h3>Контакты</h3>
-                    <ul>
-                        <li><a href="">Обратная связь</a></li>
-                        <li><a href="">Схема проезда</a></li>
-                        <li><a href="">Телефон/факс</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-bottom">
-                    <div class="copyright">Все права защищены 2015</div>
-                    <div class="footer-social-promo">Подписчикам в соц. сетях - скидки на обучение!</div>
-                    <div class="footer-social">
-                        <a href="#" class="social-btn-vk">Вконтакте</a>
-                        <a href="#" class="social-btn-fb">Facebook</a>
-                        <a href="#" class="social-btn-tw">Twitter</a>
-                    </div>
-                </div>
-
-            </div>   
+            <div class="footer-item">
+                <h2>Связаться с нами:</h2>
+                <p>тел. 8-000-0-000-000<br>e-mail: itis_ivgpu@gmail.com</p>
+            </div>
         </div>
     </footer>
 
