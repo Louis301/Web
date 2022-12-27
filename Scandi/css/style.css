@@ -1,0 +1,564 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+   font-weight: 400;  /* Толщина */
+   font-size: 18px;
+   line-height: 30px;  /* Межстрочный интервал */
+   font-family: "Montserrat", "Roboto", sans-serif;  /* подключение шрифта */
+   color: #533738;  /* Устанавливаем цвет текста */
+}
+
+a {
+  text-decoration: none;  /* Убираем подчёркивания ссылок */
+  color: inherit;  /* Наследуем цвет текста у родителя */
+}
+
+.container {
+  max-width: 1200px;  /* Задаём максимальную ширину контейнера*/
+  margin: 0 auto;  /* Убираем верхний внешний отступ и устанавливаем автомат-кое определение отступов слева и справа */
+  padding: 0 10px;  /* Убираем верхний внутренний отступ и устанавливаем автомат-кое определение отступов слева и справа */
+}
+
+.little-container {
+  width: 1036px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------- */
+/* header  */
+
+.header {
+  background-image: url(/img/bg.png);  /* подтягиваем картинку */
+  background-repeat: no-repeat;   /* Отключаем дублирование изображения */
+  background-position: top center;  /* прижимаем картинку к верхнему краю и центрируем её */
+  background-size: cover;  /* Растягиваем изображение на весь экран */
+  min-height: 715px;  /* Задаём минимальную высоту тега (100% действующего экрана) */
+}
+
+.header__inner {
+  padding-top: 35px;
+  padding-bottom: 170px;
+}
+
+.header__top {
+ display: flex;  /* Тип элемента */
+ justify-content: space-between;  /* Флексовые элементы равномерно распределяются по горизонтали */
+ font-size: 16px;
+ align-items: center;  /* Выравнивание элементов по центру горизонтали */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  list-style: none;  /* Убираем "точки" */
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin-right: 25px;
+}
+
+.menu__item:last-child {  /* Убираем внешний правый отступ у последнего эемента списка */
+ margin-right: 0;
+}
+
+.menu__link:hover {  /* Меняем цвет ссылки при наведении */
+  color: #CC8886;
+}
+
+.promo-text {
+  width: 48%;
+}
+
+.header__title {
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: 400;
+  margin: 90px 0 25px;  /* Настройка внешнего отступа сверху, с боков (0px) и снизу */
+}
+
+.header__discr {
+  margin-bottom: 20px;
+}
+
+.header__btn {
+  display: inline-block;  /* Тип элемента: блочно-строчный */
+  width: 310px;
+  background-color: #cc8b86;
+  padding: 25px 65px 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color:#533738;  /* Цвет текста */
+  text-align: center;  /* Выравниваем текст по центру */
+  cursor:pointer;  /* Меняем курсор на "ручку" */
+  border: none;  /* Отключаем границы */
+  outline: none;  /* Отключаем обводку */
+}
+
+.header__btn:hover {  /* Правила при наведении */
+  background-color: #fff;
+  color: #cc8b86
+}
+
+.header__btn:active {  /* Правила при нажатии */
+  background-color: #fff;
+  color: #533738;
+  border: 2px solid #533738;  /* Сплошная граница толщиной в 2px */
+}
+
+
+/* ----------------------------------------------------- */
+/* about  */
+
+.about {
+  background-color:#efe6e4;
+  padding: 65px 0px 40px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.half-wrap {
+  display: flex;   /* Элементы этого класса будут "идти друг за другом" */
+}
+
+.about__img {
+  margin-right: 64px;
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
+}
+
+.text-wrap {
+  width: 58%;
+  display: block;
+}
+
+.text-wrap p {
+  margin-bottom: 30px;
+}
+
+/* ----------------------------------------------------- */
+/* features  */
+
+.features {
+  background-color:#8D7370;
+  padding: 85px 0px 80px;
+}
+
+.features__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  text-align: center;
+}
+
+.features__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  color: #fff;
+}
+
+.features__discr {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 10px;
+}
+
+
+/* ----------------------------------------------------- */
+/* works  */
+
+.works__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.works {
+  background-color:#efe6e4;
+  padding: 65px 0px 40px;
+}
+
+.works__grid {
+  display: grid;
+  grid-template-columns: 5fr 2fr 5fr;
+  gap: 30px 20px;
+}
+
+.works__item {
+  position: relative;
+}
+
+.works__item:nth-child(2) {
+  grid-column: 2 / -1;
+}
+
+.works__item:nth-child(3) {
+  grid-column: 1 / 3;
+}
+
+.works__item:nth-child(4) {
+  grid-column: 3 / -1;
+}
+
+.works__img {
+  display: block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.works__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-sizing: border-box;
+  padding: 86px 35px 0px 35px;
+  width: 100%;
+  height: 100%;
+  background-color: #644B45;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.works__item:hover .works__hover{
+  z-index: 2;
+}
+
+.works__heading {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 285px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.works__more {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.works__arrow {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px; 
+}
+
+.works__arrow:hover {
+  color: #cc8b86
+}
+
+
+
+/* ----------------------------------------------------- */
+/* team  */
+
+.team {
+  background-color: #e2c4ba;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.team__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  padding-right: 38px;
+}
+
+.team__img {
+  display: block;
+  margin: 0;
+  width: 320px;
+  height: 253px;
+  padding-bottom: 10px;
+}
+
+.team__discr {
+  width: 320px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+/* ----------------------------------------------------- */
+/* pro-list  */
+
+.pro-list {
+  background-color: #e2c4ba;
+  padding-bottom: 80px;
+}
+
+.pro-list__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pro-list__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro-list__item {
+  margin-right: 25px;
+  width: 25%;
+}
+
+.pro-list__item:last-child {
+  margin-right: 25px;
+  width: 25%;
+}
+
+.pro-list__item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #8d7370;
+  color: #fff;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.pro-list__item p {
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+/* ----------------------------------------------------- */
+/* feedback  */
+
+.feedback {
+  background-color:#efe6e4;
+  padding: 65px 0 65px;
+}
+
+.feedback__slider {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.feedback_pagination {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.feedback__button {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border: 2px solid #cc8b86;
+  border-radius: 50%;  /* Скругление краёв */
+  background-color: #cc8b86;
+}
+
+.feedback__slides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.feedback__slides-text {
+  width: 407px;
+}
+
+.feedback__slides-text p {
+  padding-bottom: 20px;
+}
+
+.feedback__slides-text p:last-child {
+  padding-bottom: 0;
+}
+
+.feedback__author {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #533738;
+}
+
+.feedback__img {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.feedback__img:last-child {
+  margin-bottom: 0;
+}
+
+.feedback__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------- */
+/* request  */
+
+.request {
+  max-height: 623px;
+  background-color: #8D7370;
+}
+
+.request-content {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  left: 56px;
+}
+
+.request-text {
+  padding-top: 50px;
+  width: 50%;
+  position: relative;
+  top:-93px;
+}
+
+.request-title {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.request-p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  padding-top: 42px;
+  margin: 0;
+}
+
+.request-form-input {
+  /* position: relative; */
+  width:85%;
+  padding: 10px 0 10px;
+  margin: 30px 0 0;
+  outline: none;
+  border:none;
+  background-color: #8D7370;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+ input[type="text"]::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3;
+ } 
+ input[type="text"]::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3;
+ }
+
+.request-btn {
+  margin-top: 41px;
+}
+
+.request-map {
+  position: relative;
+  top:-2px;
+  left:-45px;
+  width: 590px;
+}
+
+
+/* ----------------------------------------------------- */
+/* bottom  */
+
+footer {
+  max-height:  104px;
+  background-color:#efe6e4;
+}
+
+.footer-content {
+  list-style: none;  /* Убираем "точки" */
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 0 37px;
+  margin: 0px;
+}
+
+.footer-content-phone {
+  padding-right: 42px;
+}
+.footer-content-address {
+  padding-right: 360px;
+}
