@@ -1,0 +1,23 @@
+.cell-default, .cell-win, .cell-empty {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 100px;
+    color: aliceblue;
+}
+.cell-default {
+    background-color: brown;
+}
+.cell-win {
+    background-color: green;
+}
+.cell-empty {
+    background-color: black;
+    color: black;
+}
+
+.text-win {
+    display: none;
+}
